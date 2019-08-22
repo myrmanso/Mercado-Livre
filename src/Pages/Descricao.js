@@ -39,8 +39,11 @@ class Descricao extends Component{
            console.log('resposta descricao',resp.data.plain_text) 
            this.setState({
             descricao: resp.data.plain_text,
+            })
         })
-        })
+        .catch (error => {
+            console.log(error)
+        }) 
         
     }
 
@@ -50,7 +53,6 @@ class Descricao extends Component{
         return(
             <Fragment>
                 <Busca/>
-                <BreadCrumb/>
                 <Container>
                     <Detalhe
                         img = {img}
