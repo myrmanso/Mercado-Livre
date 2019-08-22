@@ -7,12 +7,8 @@ const configBusca = {
 
 const protocoloBusca = axios.create(configBusca)
 
-//Função para autenticação do usuário na página
-// const valueBusca = () => localStorage.getItem('valueBusca') ? true : false
-
-export const getBusca = () => {
-    let keyValue = localStorage.getItem('valueBusca')
-    const urlBusca = `/sites/MLA/search?q=${keyValue}`
+export const getBusca = (a) => {
+    const urlBusca = `/sites/MLA/search?q=${a}`
     return protocoloBusca.get(urlBusca)
 }
 
