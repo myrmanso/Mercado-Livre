@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    font-family: $font;
+    color: $texto;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $bg-terciario;
+}
+
+.compra-btn{
+    width: 100%;
+    font-size: $btnCompra;
+    color: $texto-btnCompra;
+    text-align: center;
+    padding: $medida2;
+    background-color: $bg-btnCompra;
+    border: none;
+    border-radius: $medida1;
+}

@@ -1,0 +1,38 @@
+
+.nav{
+    background-color:$bg-primario;
+    padding: $medida1 0;
+}
+
+.nav-container{
+    @extend %grid-c-12;
+}
+
+.nav-img{
+    grid-column: 2/ 3;
+}
+
+.nav-form{
+    grid-column: 3/12;
+    text-align: initial;
+    align-items: center;
+}
+
+.nav-form-input{
+    width:90%;
+    color: $texto-input;
+    font-size: $p-input;
+    padding: $medida1 $medida2;
+    border: none;
+    border-radius: $medida1 0 0 $medida1;
+
+}
+
+.nav-form-btn{
+    text-align: center;
+    background-color: $bg-terciario;
+    padding:$medida1 $medida2 ;
+    border-radius: 0 $medida1 $medida1 0;
+    border: none;
+}
+

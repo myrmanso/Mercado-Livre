@@ -1,0 +1,10 @@
+.main{
+    @extend %grid-c-12;
+}
+
+.main-container--bg{
+    background-color: white;
+    border-radius: $border;
+    grid-column: 2/12;
+}
+

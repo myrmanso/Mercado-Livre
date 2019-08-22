@@ -1,0 +1,67 @@
+.produto{
+    padding: $medida2;
+    position: relative;
+      
+}
+.produto::after{
+    content: '';
+    width:96%;
+    border: 1px solid $bg-terciario;
+    position: absolute;
+    bottom: 0;
+    right: $medida2;
+    left: $medida2;
+
+}  
+
+.produto-container{
+    @include flex(center, space-between); 
+    width: 90%;
+
+    
+    .produto-divImg{
+        min-width: 180px;
+        max-width: 180px;
+        height: 180px;
+        margin-right: $medida2;           
+        border-radius: $medida1;
+
+        .produto-img{
+            width: 100%;
+        }
+    }
+
+    .produto-descricao{
+        width: 100%;
+        padding-top: $medida2;
+        .produto-preco{
+            font-size: $p-precoBusca;
+            margin: 0;
+            margin-bottom: $medida3;
+        }
+        .produto-nome{
+            margin: 0;
+            font-size: $p-descBusca;
+        }
+    }
+
+    .produto-local{
+        font-size: $p-localBusca;
+        color: $texto-prodLocal
+    }  
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

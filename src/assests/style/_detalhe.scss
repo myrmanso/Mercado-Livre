@@ -1,0 +1,52 @@
+.detalhe{
+    padding: $medida3;
+    @extend %grid-c-10;
+    
+    .detalhe-container-img{
+        grid-column: 1/8;
+        text-align: center;
+
+        .detalhe-img{
+            width: 680px;
+            height: 100%;
+        }
+    }
+
+    .detalhe-container-preco{
+        grid-column:8/11;
+        grid-row: 1/4;
+
+        .detalhe-qtd{
+            font-size: $p-qtdDetalhe;
+            margin: 0;
+            margin-bottom: $medida2;
+        };
+
+        .detalhe-nome{
+            font-size: $h3-nomeDetalhe;
+            margin: 0;
+        }
+
+        .detalhe-preco{
+            font-size: $h1-precoDetalhe;
+            margin: $medida3 0;
+        }
+
+    }
+
+    .detalhe-container-descricao{
+        grid-column: 1/8;
+        grid-row: 9/11;
+        .detalhe-tituloDescricao{
+            font-size: $h2-tituloDescricao;
+            margin: $medida3 0;
+            width: 100%;
+        }
+
+        .detalhe-p-descricao{
+            font-size: $p-descricao;
+            color: $texto-descricao;
+            width: 100%;
+        }
+    }
+}

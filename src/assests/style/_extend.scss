@@ -1,0 +1,16 @@
+%grid-c-12{
+    margin: 0 auto;
+    width: 90vw;
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+%grid-c-10{
+    display: grid;
+    grid-gap:20px;
+    grid-template-columns: repeat(10,1fr);
+    grid-auto-rows: repeat(10, 1fr);
+}

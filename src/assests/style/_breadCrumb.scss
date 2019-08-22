@@ -1,0 +1,14 @@
+.breadCrumb{
+    @extend %grid-c-12;
+}
+
+.breadCrumb-p{
+    font-size: $p-breadCrumb;
+    margin: $medida2 0;
+    grid-column: 2/13;
+    color: $color-breadCrumb;
+}
+
+.breadCrumb-span{
+    font-weight: 700;
+}
